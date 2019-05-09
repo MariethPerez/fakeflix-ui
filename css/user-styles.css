@@ -1,0 +1,55 @@
+body{
+  background: black;
+}
+
+.question {
+  font-size: 4em;
+  color: white;
+  text-align: center;
+}
+
+.users {
+  display: flex;
+  justify-content: space-around;
+}
+
+.users > div {
+  max-width: 15%;
+}
+
+.user_container:hover {
+  border:2px solid white;
+}
+
+.user__name {
+  font-size: 1.5em;
+  color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+.profiles{
+  display: flex;
+  justify-content: center;
+}
+
+.profiles__button { 
+  justify-content: center;
+  padding: 20px 60px;
+  background: black;
+  color: gray;
+}
+
+.profiles__button:hover {
+  border: 2px solid red;
+  color: red;
+}
+
+
+/* helpers */
+
+.user_size {
+  padding: 100px 100px;
+  border: gray;
+  margin-left: 
+}
