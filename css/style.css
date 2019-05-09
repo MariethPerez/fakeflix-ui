@@ -1,3 +1,8 @@
 body {
   margin: 0;
 }
+
+/* reset */
+.slider__footer img {
+  max-width: 30px;
+}
