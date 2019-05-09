@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* reset */
@@ -9,8 +9,152 @@ body {
 }
 
 /* show */
+.preview {
+  padding-left: 30px;
+  flex-wrap: wrap;
+}
+
+.preview__title {
+  font-size: 3em;
+}
+
+.preview__info {
+  display: flex;
+  width: 50%;
+}
+
+.preview__info > div {
+  margin: 1%;
+}
+
+.starts {
+  color: rgb(211, 88, 88);
+}
+
+.description label {
+  color: gray;
+}
+
+.description a {
+  color: white;
+}
+
+.curious {
+  padding-left: 10px;
+}
+
+.preview__tabs {
+  border: none;
+  width: 560px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+.preview__tabs a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-right: none;
+  padding: 15px;
+}
+
+.preview__tabs a:last-child {
+  color: white;
+  border: 2px solid white;
+}
+
+.preview__tabs a:hover {
+  color: black;
+  background: white;
+}
+
+.option {
+  display: flex;
+  justify-content: left;
+  padding: 2px 10px;
+}
+
+.option > div {
+  padding-left: 10px;
+}
+
+.curious {
+  display: flex;
+  margin: 1%;
+}
+
+.curious > div {
+  padding-left: 10px;
+}
 
 /* home */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #e5e5e5;
+  position: sticky;
+  top: 0px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  padding-left: 20px;
+  font-size: 0.8em;
+}
+nav ul li {
+  padding-right: 10px;
+}
+.left-menu {
+  display: flex;
+  align-items: center;
+}
+.left-menu .logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: red;
+}
+.right-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.fa-bell {
+  padding-left: 20px;
+  font-size: 25px;
+}
+.menu-profile {
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+}
+.search {
+  background-color: #070707;
+  border: #e5e5e5 1px solid;
+  display: flex;
+  padding-left: 0px;
+  align-items: center;
+}
+.search i {
+  font-size: 25px;
+  padding-left: 2.5px;
+}
+.search input {
+  background-color: #070707;
+  border: none;
+  color: gray;
+  padding-left: 10px;
+  padding: 10px 10px;
+  width: 200px;
+}
+.fa-caret-down {
+  padding-left: 5px;
+}
 
 /* users */
 
@@ -70,3 +214,25 @@ body {
 }
 
 /* helpers */
+.white {
+  color: white;
+}
+
+.gray {
+  color: gray;
+}
+
+.margin {
+  margin: 1%;
+}
+.layout {
+  background-color: #141414;
+  padding: 15px 30px 15px 30px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
