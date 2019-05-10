@@ -103,28 +103,26 @@ body {
   overflow-x: auto;
 }
 
-/* storiessssssss */
-  display: flex;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  max-width: 100%;
-  padding-bottom: 10px;
-  overflow-x: auto;
+.slider__content {
+  display: none;
+}
 
-/* storieeeeeeeeeeeeee */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 175px;
-  background-size: cover;
-  min-width: 100px;
-  background-blend-mode: multiply;
-  background-color: #00000045;
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 10px;
-  color: #fff;
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.35);
+.slider__actions {
+  display: none;
+}
+
+.slider_item {
+  margin-right: 5px;
+  border-left: 2px solid rgb(0, 0, 0)
+}
+
+.slider_item:hover {
+  border: 2px solid white;
+}
+
+.slider__footer {
+  display: none;
+}
 
 /* home */
 
@@ -269,9 +267,11 @@ nav ul li {
   background-color: #141414;
   padding: 15px 30px 15px 30px;
 }
+
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: white;
