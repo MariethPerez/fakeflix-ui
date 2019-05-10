@@ -1,12 +1,15 @@
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-family: 'Lato', sans-serif;
 }
 
 /* reset */
 .slider__footer img {
   max-width: 30px;
+}
+
+img {
+  display: block;
 }
 
 /* navbar */
@@ -24,8 +27,28 @@ body {
 }
 
 .preview {
+  background-image: url('../assets/el conjuro.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-left: 30px;
+  margin-top: 2em;
+  padding-top: 20px;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.preview__gradient {
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 20, 20, 0.9) 79%,
+    rgba(20, 20, 20, 0.64) 92%,
+    rgba(64, 64, 66, 0.1) 100%
+  );
+  left: 0;
+  top: 0;
 }
 
 .preview__title {
@@ -73,6 +96,7 @@ body {
   border-right: none;
   padding: 18px;
   letter-spacing: 1.25px;
+  font-size: 18px;
 }
 
 .preview__tabs a:last-child {
@@ -157,14 +181,22 @@ nav {
 nav ul {
   display: flex;
   flex-direction: row;
-
   margin: 0;
   padding-left: 20px;
-  font-size: 0.8em;
+  font-size: 14px;
 }
 nav ul li {
-  padding-right: 10px;
+  padding-right: 20px;
 }
+
+nav ul li a {
+  transition: color 0.4s;
+}
+
+nav ul li:hover a {
+  color: #b3b3b3;
+}
+
 .left-menu {
   display: flex;
   align-items: center;
@@ -184,25 +216,32 @@ nav ul li {
   padding-left: 20px;
   align-items: center;
 }
+
 .search {
   background-color: #070707;
   border: #e5e5e5 1px solid;
   display: flex;
-  padding-left: 0px;
   align-items: center;
+  padding: 3px 7.5px;
+  box-sizing: border-box;
 }
+
 .search i {
   font-size: 25px;
   padding-left: 2.5px;
 }
+
 .search input {
   background-color: #070707;
   border: none;
-  color: gray;
+  color: #fff;
   padding-left: 10px;
-  padding: 10px 10px;
+  line-height: 2.5;
+  padding: 0px 10px;
   width: 200px;
+  outline: none;
 }
+
 .fa-caret-down {
   padding-left: 5px;
 }
@@ -315,6 +354,16 @@ nav ul li {
   border-color: #fff;
 }
 
+.content__item {
+  margin-top: 35px;
+}
+
+.content__item h3 {
+  font-size: 20px;
+  color: #e5e5e5;
+  margin-bottom: 10px;
+}
+
 /* helpers */
 .white {
   color: white;
@@ -339,4 +388,34 @@ li {
 a {
   text-decoration: none;
   color: white;
+}
+
+.relative {
+  position: relative;
+}
+
+.scroll {
+  transition: all 0.3s;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+.scroll:hover::-webkit-scrollbar-track {
+  background: rgba(215, 218, 224, 0.3);
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.scroll:hover::-webkit-scrollbar-thumb {
+  background: rgba(144, 143, 143, 0.8);
 }
