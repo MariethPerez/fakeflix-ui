@@ -1,0 +1,174 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.transition {
+  transition-property: all;
+  transition-duration: 450ms;
+  transition-timing-function: ease-in-out;
+}
+.button-preview {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.box {
+  position: relative;
+  width: 280px;
+  height: 200px;
+  margin: 1px;
+}
+.preview {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.scale {
+  width: 280px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 0.45s ease-in-out;
+}
+.scale:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  transition-property: all;
+  transition-duration: 450ms;
+  transition-timing-function: ease-in-out;
+}
+.box:hover .scale:after{
+  opacity: 1;
+}
+.box:hover {
+  cursor: pointer;
+  width: 350px;
+  height: 230px;
+  margin-top: -15px;
+}
+.box:hover .scale{
+  transform: scale(1.2, 1.2);
+}
+.info {
+  visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.box:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+.info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* ------------------------------- */
+.d_circle_play {
+  width: 43px;
+  height: 43px;
+}
+.d_circle {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.246);
+}
+.d_circle:hover {
+  border: 1.2px solid #fff;
+}
+.d_icon {
+  fill: #fff;
+  width: 18px;
+  height: 18px;
+}
+.d_dislike {
+  transform: rotate(180deg)
+}
+.d_plus {
+  transform: rotate(90deg)
+}
+.button-play {
+  fill: #fff;
+  width: 18px;
+  height: 18px;
+  transform: rotate(180deg);
+  position: relative;
+  top: 0px;
+  left: -2px;
+}
+/* --------------------------------- */
+.content:hover .button-play{
+  fill: red;
+}
+.margin {
+  margin: 5px 5px 5px 0;
+}
+.title-preview {
+  color: #fff;
+}
+.subtitle-preview {
+  color: #5ec868;
+}
+.text_shadow {
+  text-shadow: -1px 1px #000;
+}
+.content {
+  margin-left: 5px;
+}
+.etiquet {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 3px;
+}
+.seasson {
+  color: #fff;
+}
+.description {
+  color: #fff;
+  font-size: 10px;
+}
+.button-show {
+  display: flex;
+  justify-content: center;
+}
+.icon-show {
+  fill: #fff;
+  width: 18px;
+  height: 18px;
+}
