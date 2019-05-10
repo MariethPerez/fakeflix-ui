@@ -27,23 +27,24 @@ img {
 }
 
 .preview {
-  background-image: url('../assets/el conjuro.webp');
+  background-image: url('../assets/conjuro.webp');
   background-size: cover;
   background-repeat: no-repeat;
-  padding-left: 30px;
-  margin-top: 2em;
   padding-top: 20px;
+  background-position-x: 30%;
   flex-wrap: wrap;
   position: relative;
+  padding-left: 4%;
+  margin-left: -4%;
 }
 
 .preview__gradient {
   position: absolute;
   height: 100%;
-  width: 25%;
+  width: 35%;
   background: linear-gradient(
     90deg,
-    rgba(20, 20, 20, 0.9) 79%,
+    rgb(0, 0, 0) 79%,
     rgba(20, 20, 20, 0.64) 92%,
     rgba(64, 64, 66, 0.1) 100%
   );
@@ -105,6 +106,11 @@ img {
 }
 
 .preview__tabs a:hover {
+  color: black;
+  background: white;
+}
+
+.hero__buttons a:hover {
   color: black;
   background: white;
 }
