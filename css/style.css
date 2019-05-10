@@ -1,11 +1,17 @@
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* reset */
 .slider__footer img {
   max-width: 30px;
+}
+
+/* navbar */
+.logo {
+  width: 100px;
+  display: block;
 }
 
 /* show */
@@ -114,11 +120,7 @@ nav ul li {
   display: flex;
   align-items: center;
 }
-.left-menu .logo {
-  font-weight: bold;
-  font-size: 1.5em;
-  color: red;
-}
+
 .right-menu {
   display: flex;
   justify-content: flex-end;
@@ -207,10 +209,17 @@ nav ul li {
   font-size: 20px;
   width: 300px;
   background: transparent;
-  margin: 6em 0;
+  margin: 3em 0;
   letter-spacing: 1.5px;
-  padding: 10px 20px;
+  padding: 8px 20px;
+  font-weight: 200;
+  outline: none;
   border: 1px solid gray;
+}
+
+.profile__button:hover {
+  color: #fff;
+  border-color: #fff;
 }
 
 /* helpers */
