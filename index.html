@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FakeFelix</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="assets/favicon.ico" />
@@ -17,46 +17,45 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <nav>
+      <div class="left-menu">
+        <a href="/">
+          <img class="logo-nav" src="assets/fakeflix.png" alt="fakefelix" />
+        </a>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Series</a>
+          </li>
+          <li>
+            <a href="#">Movies</a>
+          </li>
+          <li>
+            <a href="#">Recently Added</a>
+          </li>
+          <li>
+            <a href="#">My list</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-menu">
+        <div class="search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Title, people and genres" />
+        </div>
+        <div><i class="fas fa-bell"></i></div>
+        <div class="menu-profile">
+          <img src="/assets/profile.png" alt="image" />
+          <i class="fas fa-caret-down"></i>
+        </div>
+      </div>
+    </nav>
     <div class="layout">
-      <nav>
-        <div class="left-menu">
-          <a href="/">
-            <img class="logo-nav" src="assets/fakeflix.png" alt="fakefelix" />
-          </a>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Series</a>
-            </li>
-            <li>
-              <a href="#">Movies</a>
-            </li>
-            <li>
-              <a href="#">Recently Added</a>
-            </li>
-            <li>
-              <a href="#">My list</a>
-            </li>
-          </ul>
-        </div>
-        <div class="right-menu">
-          <div class="search">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Title, people and genres" />
-          </div>
-          <div><i class="fas fa-bell"></i></div>
-          <div class="menu-profile">
-            <img src="/assets/profile.png" alt="image" />
-            <i class="fas fa-caret-down"></i>
-          </div>
-        </div>
-      </nav>
       <div class="hero">
         <div
           class="hero__content"
-          ,
           style="background-image: url('/assets/topimg.webp')"
         >
           <div class="hero_detail">
@@ -79,7 +78,242 @@
       <div class="content">
         <div class="content__item">
           <h3>Popular on Netflix</h3>
-          <div class="slider">
+          <div class="slider scroll">
+            <a href="show.html#selected" class="slider_item">
+              <div>
+                <img src="/assets/slider.webp" alt="" />
+              </div>
+              <div class="slider__content">
+                <i class="far fa-play-circle"></i>
+                <h4>El conjuro</h4>
+                <div class="info">
+                  <div>98% Match</div>
+                  <div>TV-14</div>
+                  <div>9 Seasons</div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slider__actions">
+                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-down"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="slider__footer">
+                <img src="assets/down-chevron.svg" alt="down-chevron" />
+              </div>
+            </a>
+            <div class="slider_item">
+              <div>
+                <img src="/assets/slider.webp" alt="" />
+              </div>
+              <div class="slider__content">
+                <i class="far fa-play-circle"></i>
+                <h4>El conjuro</h4>
+                <div class="info">
+                  <div>98% Match</div>
+                  <div>TV-14</div>
+                  <div>9 Seasons</div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slider__actions">
+                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-down"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="slider__footer">
+                <img src="assets/down-chevron.svg" alt="down-chevron" />
+              </div>
+            </div>
+            <div class="slider_item">
+              <div>
+                <img src="/assets/slider.webp" alt="" />
+              </div>
+              <div class="slider__content">
+                <i class="far fa-play-circle"></i>
+                <h4>El conjuro</h4>
+                <div class="info">
+                  <div>98% Match</div>
+                  <div>TV-14</div>
+                  <div>9 Seasons</div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slider__actions">
+                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-down"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="slider__footer">
+                <img src="assets/down-chevron.svg" alt="down-chevron" />
+              </div>
+            </div>
+            <div class="slider_item">
+              <div>
+                <img src="/assets/slider.webp" alt="" />
+              </div>
+              <div class="slider__content">
+                <i class="far fa-play-circle"></i>
+                <h4>El conjuro</h4>
+                <div class="info">
+                  <div>98% Match</div>
+                  <div>TV-14</div>
+                  <div>9 Seasons</div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slider__actions">
+                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-down"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="slider__footer">
+                <img src="assets/down-chevron.svg" alt="down-chevron" />
+              </div>
+            </div>
+            <div class="slider_item">
+              <div>
+                <img src="/assets/slider.webp" alt="" />
+              </div>
+              <div class="slider__content">
+                <i class="far fa-play-circle"></i>
+                <h4>El conjuro</h4>
+                <div class="info">
+                  <div>98% Match</div>
+                  <div>TV-14</div>
+                  <div>9 Seasons</div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slider__actions">
+                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-down"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="slider__footer">
+                <img src="assets/down-chevron.svg" alt="down-chevron" />
+              </div>
+            </div>
+            <div class="slider_item">
+              <div>
+                <img src="/assets/slider.webp" alt="" />
+              </div>
+              <div class="slider__content">
+                <i class="far fa-play-circle"></i>
+                <h4>El conjuro</h4>
+                <div class="info">
+                  <div>98% Match</div>
+                  <div>TV-14</div>
+                  <div>9 Seasons</div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slider__actions">
+                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-down"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="slider__footer">
+                <img src="assets/down-chevron.svg" alt="down-chevron" />
+              </div>
+            </div>
+            <div class="slider_item">
+              <div>
+                <img src="/assets/slider.webp" alt="" />
+              </div>
+              <div class="slider__content">
+                <i class="far fa-play-circle"></i>
+                <h4>El conjuro</h4>
+                <div class="info">
+                  <div>98% Match</div>
+                  <div>TV-14</div>
+                  <div>9 Seasons</div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slider__actions">
+                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-down"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="slider__footer">
+                <img src="assets/down-chevron.svg" alt="down-chevron" />
+              </div>
+            </div>
+            <div class="slider_item">
+              <div>
+                <img src="/assets/slider.webp" alt="" />
+              </div>
+              <div class="slider__content">
+                <i class="far fa-play-circle"></i>
+                <h4>El conjuro</h4>
+                <div class="info">
+                  <div>98% Match</div>
+                  <div>TV-14</div>
+                  <div>9 Seasons</div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slider__actions">
+                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-down"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="slider__footer">
+                <img src="assets/down-chevron.svg" alt="down-chevron" />
+              </div>
+            </div>
+            <div class="slider_item">
+              <div>
+                <img src="/assets/slider.webp" alt="" />
+              </div>
+              <div class="slider__content">
+                <i class="far fa-play-circle"></i>
+                <h4>El conjuro</h4>
+                <div class="info">
+                  <div>98% Match</div>
+                  <div>TV-14</div>
+                  <div>9 Seasons</div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slider__actions">
+                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-down"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="slider__footer">
+                <img src="assets/down-chevron.svg" alt="down-chevron" />
+              </div>
+            </div>
+            <div class="slider_item">
+              <div>
+                <img src="/assets/slider.webp" alt="" />
+              </div>
+              <div class="slider__content">
+                <i class="far fa-play-circle"></i>
+                <h4>El conjuro</h4>
+                <div class="info">
+                  <div>98% Match</div>
+                  <div>TV-14</div>
+                  <div>9 Seasons</div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slider__actions">
+                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-down"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="slider__footer">
+                <img src="assets/down-chevron.svg" alt="down-chevron" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__item">
+          <h3>Popular on Netflix</h3>
+          <div class="slider scroll">
             <div class="slider_item">
               <div>
                 <img src="/assets/slider.webp" alt="" />
@@ -314,7 +548,7 @@
         </div>
         <div class="content__item">
           <h3>Popular on Netflix</h3>
-          <div class="slider">
+          <div class="slider scroll">
             <div class="slider_item">
               <div>
                 <img src="/assets/slider.webp" alt="" />
@@ -549,7 +783,7 @@
         </div>
         <div class="content__item">
           <h3>Popular on Netflix</h3>
-          <div class="slider">
+          <div class="slider scroll">
             <div class="slider_item">
               <div>
                 <img src="/assets/slider.webp" alt="" />
@@ -784,242 +1018,7 @@
         </div>
         <div class="content__item">
           <h3>Popular on Netflix</h3>
-          <div class="slider">
-            <div class="slider_item">
-              <div>
-                <img src="/assets/slider.webp" alt="" />
-              </div>
-              <div class="slider__content">
-                <i class="far fa-play-circle"></i>
-                <h4>El conjuro</h4>
-                <div class="info">
-                  <div>98% Match</div>
-                  <div>TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="slider__actions">
-                <i class="far fa-thumbs-up"></i>
-                <i class="far fa-thumbs-down"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="slider__footer">
-                <img src="assets/down-chevron.svg" alt="down-chevron" />
-              </div>
-            </div>
-            <div class="slider_item">
-              <div>
-                <img src="/assets/slider.webp" alt="" />
-              </div>
-              <div class="slider__content">
-                <i class="far fa-play-circle"></i>
-                <h4>El conjuro</h4>
-                <div class="info">
-                  <div>98% Match</div>
-                  <div>TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="slider__actions">
-                <i class="far fa-thumbs-up"></i>
-                <i class="far fa-thumbs-down"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="slider__footer">
-                <img src="assets/down-chevron.svg" alt="down-chevron" />
-              </div>
-            </div>
-            <div class="slider_item">
-              <div>
-                <img src="/assets/slider.webp" alt="" />
-              </div>
-              <div class="slider__content">
-                <i class="far fa-play-circle"></i>
-                <h4>El conjuro</h4>
-                <div class="info">
-                  <div>98% Match</div>
-                  <div>TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="slider__actions">
-                <i class="far fa-thumbs-up"></i>
-                <i class="far fa-thumbs-down"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="slider__footer">
-                <img src="assets/down-chevron.svg" alt="down-chevron" />
-              </div>
-            </div>
-            <div class="slider_item">
-              <div>
-                <img src="/assets/slider.webp" alt="" />
-              </div>
-              <div class="slider__content">
-                <i class="far fa-play-circle"></i>
-                <h4>El conjuro</h4>
-                <div class="info">
-                  <div>98% Match</div>
-                  <div>TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="slider__actions">
-                <i class="far fa-thumbs-up"></i>
-                <i class="far fa-thumbs-down"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="slider__footer">
-                <img src="assets/down-chevron.svg" alt="down-chevron" />
-              </div>
-            </div>
-            <div class="slider_item">
-              <div>
-                <img src="/assets/slider.webp" alt="" />
-              </div>
-              <div class="slider__content">
-                <i class="far fa-play-circle"></i>
-                <h4>El conjuro</h4>
-                <div class="info">
-                  <div>98% Match</div>
-                  <div>TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="slider__actions">
-                <i class="far fa-thumbs-up"></i>
-                <i class="far fa-thumbs-down"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="slider__footer">
-                <img src="assets/down-chevron.svg" alt="down-chevron" />
-              </div>
-            </div>
-            <div class="slider_item">
-              <div>
-                <img src="/assets/slider.webp" alt="" />
-              </div>
-              <div class="slider__content">
-                <i class="far fa-play-circle"></i>
-                <h4>El conjuro</h4>
-                <div class="info">
-                  <div>98% Match</div>
-                  <div>TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="slider__actions">
-                <i class="far fa-thumbs-up"></i>
-                <i class="far fa-thumbs-down"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="slider__footer">
-                <img src="assets/down-chevron.svg" alt="down-chevron" />
-              </div>
-            </div>
-            <div class="slider_item">
-              <div>
-                <img src="/assets/slider.webp" alt="" />
-              </div>
-              <div class="slider__content">
-                <i class="far fa-play-circle"></i>
-                <h4>El conjuro</h4>
-                <div class="info">
-                  <div>98% Match</div>
-                  <div>TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="slider__actions">
-                <i class="far fa-thumbs-up"></i>
-                <i class="far fa-thumbs-down"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="slider__footer">
-                <img src="assets/down-chevron.svg" alt="down-chevron" />
-              </div>
-            </div>
-            <div class="slider_item">
-              <div>
-                <img src="/assets/slider.webp" alt="" />
-              </div>
-              <div class="slider__content">
-                <i class="far fa-play-circle"></i>
-                <h4>El conjuro</h4>
-                <div class="info">
-                  <div>98% Match</div>
-                  <div>TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="slider__actions">
-                <i class="far fa-thumbs-up"></i>
-                <i class="far fa-thumbs-down"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="slider__footer">
-                <img src="assets/down-chevron.svg" alt="down-chevron" />
-              </div>
-            </div>
-            <div class="slider_item">
-              <div>
-                <img src="/assets/slider.webp" alt="" />
-              </div>
-              <div class="slider__content">
-                <i class="far fa-play-circle"></i>
-                <h4>El conjuro</h4>
-                <div class="info">
-                  <div>98% Match</div>
-                  <div>TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="slider__actions">
-                <i class="far fa-thumbs-up"></i>
-                <i class="far fa-thumbs-down"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="slider__footer">
-                <img src="assets/down-chevron.svg" alt="down-chevron" />
-              </div>
-            </div>
-            <div class="slider_item">
-              <div>
-                <img src="/assets/slider.webp" alt="" />
-              </div>
-              <div class="slider__content">
-                <i class="far fa-play-circle"></i>
-                <h4>El conjuro</h4>
-                <div class="info">
-                  <div>98% Match</div>
-                  <div>TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="slider__actions">
-                <i class="far fa-thumbs-up"></i>
-                <i class="far fa-thumbs-down"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="slider__footer">
-                <img src="assets/down-chevron.svg" alt="down-chevron" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content__item">
-          <h3>Popular on Netflix</h3>
-          <div class="slider">
+          <div class="slider scroll">
             <div class="slider_item">
               <div>
                 <img src="/assets/slider.webp" alt="" />
