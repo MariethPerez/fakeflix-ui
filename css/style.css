@@ -16,6 +16,7 @@ img {
 
 /* show */
 
+
 /* home */
 
 .content {
@@ -300,6 +301,74 @@ img {
   stroke-linejoin: miter;
 }
 
+.footer {
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.footer__social {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.social__icons {
+  color: #999;
+}
+
+.footer__options {
+  padding: 0;
+  margin: 0;
+  max-width: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer__options > li {
+  margin-left: 0;
+  color: #999;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer__link {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 16px;
+  display: inline-block;
+  min-width: 100px;
+  width: 25;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+.footer__button {
+  margin-top: 12px;
+  border: 1px solid #999;
+  background: #141414;
+  color: #999;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.footer__benchmark {
+  padding-top: 10px;
+  color: #999;
+}
 /* home */
 
 nav {
@@ -468,13 +537,11 @@ nav ul li:hover a {
 
 .users {
   display: flex;
-  justify-content: center;
 }
 
 .profile__title {
   text-align: center;
   font-size: 60px;
-  margin-top: 10px;
   letter-spacing: 1.5px;
 }
 
@@ -512,7 +579,7 @@ nav ul li:hover a {
   font-size: 20px;
   width: 300px;
   background: transparent;
-  margin-top: 3em;
+  margin: 3em 0;
   letter-spacing: 1.5px;
   padding: 8px 20px;
   font-weight: 200;
@@ -568,27 +635,6 @@ nav ul li:hover a {
   .preview__tabs a {
     padding: 10px 15px;
   }
-
-  .profile__title {
-    font-size: 45px;
-  }
-
-  .users {
-    flex-wrap: wrap;
-  }
-
-  .users__item {
-    width: 16%;
-    margin: 12px;
-  }
-}
-
-@media (min-width: 768px) {
-  .layout-users {
-    height: calc(100vh - 68px);
-    display: flex;
-    align-items: center;
-  }
 }
 
 @media (max-width: 768px) {
@@ -613,36 +659,9 @@ nav ul li:hover a {
     padding: 5px 7px;
     font-size: 16px;
   }
-
-  .users__name {
-    font-size: 16px;
-    word-break: break-all;
-  }
 }
 
 @media (max-width: 576px) {
-  .profile__title {
-    font-size: 37px;
-  }
-
-  .users {
-    flex-wrap: wrap;
-  }
-
-  .users__item {
-    width: 25%;
-    margin: 12px;
-  }
-
-  .users__name {
-    font-size: 13px;
-  }
-
-  .profile__button {
-    font-size: 18px;
-    margin-top: 1em;
-  }
-
   .hero__content {
     height: 300px;
   }
