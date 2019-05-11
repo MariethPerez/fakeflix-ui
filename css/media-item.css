@@ -1,0 +1,142 @@
+
+
+/* media-item */
+.media-item {
+  position: relative;
+  width: 426px;
+  height: 240px;
+}
+.media-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 1;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+  transition-property: all;
+  transition-duration: 450ms;
+  transition-timing-function: ease-in-out;
+}
+.media-item:hover:after{
+  opacity: 1;
+}
+.media-item .preview {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.media-item .info {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.media-item .info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 15px 0 12px;
+  color: white;
+}
+.media-item .button-play {
+  width: 34px;
+  height: 34px;
+  background-color: rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+.media-item .button-play .svg{
+  fill: var(--c-primary);
+  width: 14px;
+}
+
+.media-item .title{
+  margin: 0.5em 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.media-item .characteristics{
+  font-size: 14px;
+}
+.media-item .characteristics .item{
+  margin-right: 8px;
+}
+.media-item .characteristics .control{
+  border: 1px solid rgba(255,255,255,0.6);
+  padding: 1px 5px;
+}
+
+.media-item .tags{
+  display: flex;
+  font-size: 15px;
+  margin: 0;
+  margin-top: 12px;
+  margin-right: -24px;
+}
+.media-item .tags .link{
+  color: white;
+  text-decoration: none;
+}
+.media-item .tags .item{
+  display: flex;
+  align-items: flex-end;
+  margin-right: 24px;
+  position: relative;
+}
+.media-item .tags .item:after{
+  content: "\2022";
+  position: absolute;
+  font-size: 20px;
+  color: var(--c-gray);
+  right: -15px;
+  bottom: -5px
+}
+.media-item .tags .item:last-child:after{
+  content: "";
+}
+
+.media-item .actions .item{
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0.3);
+  margin-top: 8px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.media-item .actions .item.-rotate .svg{
+  transform: rotate(180deg);
+}
+.media-item .actions .item:hover{
+  transform: scale(1.2);
+  border-color: rgba(255,255,255,1);
+}
+.media-item .actions .item .svg{
+  width: 50%;
+  height: auto;
+  fill: white;
+}
+
+.icon-show {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.icon-show .svg{
+  fill: #fff;
+  height: 20px;
+  transition: all 0.25s ;
+  cursor: pointer;
+}
+.icon-show .svg:hover{
+  fill: var(--c-primary)
+}

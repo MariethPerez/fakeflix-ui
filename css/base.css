@@ -1,0 +1,89 @@
+
+:root{
+  --c-primary: #EA0000;
+  --c-gray: #818181;
+  --c-green: #5ec868;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+
+/* Buttons */
+.button {
+  height: 35px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  transition: all 0.25s;
+}
+.button .icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  fill: white;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+
+.-primary {
+  background-color: var(--c-primary);
+}
+.-secondary {
+  background-color: transparent;
+  border: 1px solid var(--c-gray);
+}
+
+.-secondary:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+
+/* Helpers */
+
+.transition {
+  transition-property: all;
+  transition-duration: 450ms;
+  transition-timing-function: ease-in-out;
+}
+
+.center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate180{
+  transform: rotate(180deg)
+}
+
+.circle-border{
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+.highlight-green{
+  color: var(--c-green)
+}

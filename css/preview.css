@@ -1,0 +1,122 @@
+/* Movie detail */
+.movie-detail {
+  display: grid;
+  grid-template-columns: 44% 1fr;
+  grid-template-rows: 60vh 1fr;
+  color: var(--c-gray);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.movie-detail:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 42%,
+    rgba(47, 0, 0, 0) 85%
+  );
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.movie-detail .information {
+  padding-left: 56px;
+  position: relative;
+  z-index: 2;
+}
+
+.movie-detail .information .title {
+  font-size: 32px;
+  color: white;
+  margin: 2em 0 1em 0;
+}
+
+.movie-detail .information .characteristics {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.movie-detail .information .characteristics .item {
+  margin-right: 8px;
+}
+
+.movie-detail .information .control {
+  border: 1px solid #666666;
+  padding: 0.2em 0.5em;
+}
+
+.movie-detail .description {
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+.movie-detail .actions {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.movie-detail .actions .button {
+  margin-right: 10px;
+}
+
+.movie-detail .valoration {
+  border: 2px solid var(--c-gray);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.movie-detail .valoration .icon {
+  fill: white;
+  width: 16px;
+  height: 16px;
+}
+
+.movie-detail .valoration:hover {
+  transform: scale(1.1);
+  border-color: white;
+}
+
+.movie-detail .more-information {
+  grid-column: 1 / 3;
+}
+
+.movie-detail .extra {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.movie-detail .extra .icon {
+  height: 32px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--c-gray);
+  flex: 1 0 32px;
+  margin-right: 8px;
+}
+
+.movie-detail .features-list {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.movie-detail .features-list .item {
+  margin: 0;
+}
+
+.movie-detail .features-list .name {
+  font-weight: bold;
+}
