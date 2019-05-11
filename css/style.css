@@ -33,6 +33,7 @@ img {
   padding-top: 20px;
   background-position-x: 30%;
   flex-wrap: wrap;
+  margin-top: -2.5em;
   position: relative;
   padding-left: 4%;
   margin-left: -4%;
@@ -41,13 +42,8 @@ img {
 .preview__gradient {
   position: absolute;
   height: 100%;
-  width: 35%;
-  background: linear-gradient(
-    90deg,
-    rgb(0, 0, 0) 79%,
-    rgba(20, 20, 20, 0.64) 92%,
-    rgba(64, 64, 66, 0.1) 100%
-  );
+  background: linear-gradient(90deg, #000 50%, transparent);
+  width: 70%;
   left: 0;
   top: 0;
 }
@@ -75,10 +71,6 @@ img {
 
 .description a {
   color: white;
-}
-
-.curious {
-  padding-left: 10px;
 }
 
 .preview__tabs {
@@ -118,7 +110,7 @@ img {
 .option {
   display: flex;
   justify-content: left;
-  padding: 2px 10px;
+  padding: 2px 0;
 }
 
 .option > div {
@@ -127,7 +119,7 @@ img {
 
 .curious {
   display: flex;
-  margin: 1%;
+  /* margin: 1%; */
 }
 
 .curious > div {
@@ -163,11 +155,24 @@ img {
   box-sizing: border-box;
 }
 
-.slider__item.active {
+.slider__item.active img {
   border: 2px solid #fff;
   transition-property: border;
   transition-duration: 1s;
   transition-timing-function: ease-in;
+}
+
+.slider__item.active:before {
+  content: '';
+  z-index: 100;
+  bottom: 21px;
+  position: absolute;
+  left: calc(50% - 20px);
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 15px solid #ffffff;
 }
 
 .slider__item img {
@@ -184,12 +189,12 @@ img {
 }
 
 .slider:hover .slider__item:hover {
-  transform: scale(1.5);
+  transform: scale(1.425);
   opacity: 1;
 }
 
 .slider:hover .slider__item:first-child:hover {
-  transform: scale(1.5) translate3d(4.5em, 0, 0);
+  transform: scale(1.425) translate3d(4.5em, 0, 0);
 }
 
 .slider:hover .slider__item:first-child:hover ~ .slider__item {
@@ -197,7 +202,7 @@ img {
 }
 
 .slider:hover .slider__item:last-child:hover {
-  transform: scale(1.5) translate3d(-9em, 0, 0);
+  transform: scale(1.425) translate3d(-9em, 0, 0);
 }
 
 .slider:hover .slider__box {
@@ -534,7 +539,7 @@ nav ul li:hover a {
 }
 
 .margin {
-  margin: 1%;
+  margin: 1% 0;
 }
 
 .layout {
