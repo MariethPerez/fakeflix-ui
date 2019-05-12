@@ -1,17 +1,16 @@
-body {
-  margin: 0;
-  background-color: black;
-  color: #e5e5e5;
-  font-family: sans-serif;
-}
-
 .header-main {
+  position: fixed;
+  z-index: 9;
+  top: 0;
   height: 68px;
   display: flex;
-  margin: 0px 4%;
   font-size: 14px;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 16px 0 4%;
+  background: rgba(20,20,20,0.4)
 }
 
 .header-options {
@@ -19,7 +18,6 @@ body {
   display: flex;
   width: 448px;
   justify-content: space-around;
-  padding-left: 32px;
   margin-right: auto;
 }
 
@@ -44,7 +42,9 @@ body {
 .header-option {
   cursor: pointer;
 }
-
+.header-logo{
+  margin-right: 32px;
+}
 .header-option a:hover {
   color: #b3b3b3;
 }

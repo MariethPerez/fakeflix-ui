@@ -94,6 +94,9 @@
   margin-top: 0px;
   transition: all 0.5s ease;
   margin-bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .category-info-radio:checked ~ .category-info-item{
