@@ -1,1258 +1,1457 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>El conjuro | FakeFelix</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>El conjuro | FakeFelix</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
-  <link rel="shortcut icon" href="assets/favicon.ico" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <nav>
-    <div class="left-menu">
-      <a href="/">
-        <img class="logo-nav" src="assets/fakeflix.png" alt="fakefelix" />
-      </a>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Series</a>
-        </li>
-        <li>
-          <a href="#">Movies</a>
-        </li>
-        <li>
-          <a href="#">Recently Added</a>
-        </li>
-        <li>
-          <a href="#">My list</a>
-        </li>
-      </ul>
-    </div>
-    <div class="right-menu">
-      <div class="search">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Title, people and genres" />
-      </div>
-      <div><i class="fas fa-bell"></i></div>
-      <div class="menu-profile">
-        <img src="/assets/profile.png" alt="image" />
-        <i class="fas fa-caret-down"></i>
-      </div>
-    </div>
-  </nav>
-  <div class="layout">
-    <div class="hero">
-      <div class="hero__content" style="background-image: url('/assets/topimg.jpg')">
-        <div class="hero__detail">
-          <div class="logo">
-            <img src="/assets/movietitle.webp" alt="" />
-          </div>
-          <div class="hero__detail-text">
-            Watch season 1 now
-          </div>
-          <div class="hero__buttons">
-            <a href="#"><i class="fas fa-play"></i> Play</a>
-            <a href="#"><i class="fas fa-plus"></i> My list</a>
-          </div>
-          <div class="hero__detail-text">
-            For fans who likes things
-          </div>
-        </div>
-        <div class="hero__fade-bottom"></div>
-      </div>
-    </div>
-    <div class="content">
-      <div class="content__item" id="selected">
-        <h3>Popular on Netflix</h3>
-        <div class="slider scroll">
-          <a href="show.html#selected" class="slider__item active">
-            <img src="./assets/sliders/slider-1.jpg" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">El conjuro</h4>
-                <div class="info text-shadow">
-                  <div class="green">98% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>9 Seasons</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/psyco.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">American Psycho</h4>
-                <div class="info text-shadow">
-                  <div class="green">80% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/strangersthings.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Strangers Things</h4>
-                <div class="info text-shadow">
-                  <div class="green">90% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>2 Seasons</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/soyleyenda.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">I am Legend</h4>
-                <div class="info text-shadow">
-                  <div class="green">87% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/americanganster.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">American Gangster</h4>
-                <div class="info text-shadow">
-                  <div class="green">92% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/schindlerlist.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Schindler's List</h4>
-                <div class="info text-shadow">
-                  <div class="green">77% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/theprofessional.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">The Professional</h4>
-                <div class="info text-shadow">
-                  <div class="green">95% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/therevenant.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">The Revenant</h4>
-                <div class="info text-shadow">
-                  <div class="green">86% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/volveralfuturo.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Back to the Future</h4>
-                <div class="info text-shadow">
-                  <div class="green">91% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/gloriusbastards.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Inglorious Bastards</h4>
-                <div class="info text-shadow">
-                  <div class="green">89% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="preview">
-        <div class="preview__gradient"></div>
-        <h2 class="preview__title white relative">El conjuro</h2>
-        <div class="preview__info relative">
-          <div class="starts">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <div class="preview_year gray">2015</div>
-          <div class="preview_category gray">TV-MA</div>
-          <div class="preview_season gray">1 Season</div>
-        </div>
-        <p class="preview__description gray relative">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-          doloremque.
-        </p>
-        <div class="description relative">
-          <p>
-            <label>Starring:</label>
-            <a href="#">David Conde</a>
-            <a href="#">Deborath Space</a>
-            <a href="#">Vincent Donovan</a>
-          </p>
-          <p>
-            <label>Genres:</label>
-            <a href="#">Tv Shows</a>
-            <a href="#">Horror Book</a>
-            <a href="#">Horror</a>
-          </p>
-          <p>
-            <label>This show is:</label>
-            <a href="#">Scary</a>
-            <a href="#">Dark</a>
-            <a href="#">Gore</a>
-          </p>
-        </div>
-        <div class="curious relative">
-          <i class="fas fa-user-circle gray"></i>
-          <div class="gray">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </div>
-        </div>
-        <div class="option margin relative">
-          <i class="far fa-check-circle white"></i>
-          <div class="white">MY LIST</div>
-        </div>
-        <div class="preview__tabs relative">
-          <a href="#">Overview</a>
-          <a href="#">Episodes</a>
-          <a href="#">More like this</a>
-          <a href="#">Details</a>
-        </div>
-      </div>
-      <div class="content__item">
-        <h3>Trending Now</h3>
-        <div class="slider scroll">
-          <a href="show.html#selected" class="slider__item">
-            <img src="./assets/content/antman.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Ant-Man</h4>
-                <div class="info text-shadow">
-                  <div class="green">95% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/guardiansofgalaxy.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Guardians of the Galaxy</h4>
-                <div class="info text-shadow">
-                  <div class="green">96% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/ironman3panel.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Ironman 3</h4>
-                <div class="info text-shadow">
-                  <div class="green">92% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/captainamerica.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">
-                  Captain America: El Primer Vengador
-                </h4>
-                <div class="info text-shadow">
-                  <div class="green">90% Match</div>
-                  <div class="tag">TV-16</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/thor.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Thor</h4>
-                <div class="info text-shadow">
-                  <div class="green">89% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/superman.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Superman</h4>
-                <div class="info text-shadow">
-                  <div class="green">87% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/starwarsep7.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Episode VII</h4>
-                <div class="info text-shadow">
-                  <div class="green">93% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/onepunchman.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">One Punch Man</h4>
-                <div class="info text-shadow">
-                  <div class="green">92% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>1 Season</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/deathnote.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Death Note</h4>
-                <div class="info text-shadow">
-                  <div class="green">89% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>1 Season</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/thordarkworld.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Thor: The Dark World</h4>
-                <div class="info text-shadow">
-                  <div class="green">92% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="content__item">
-        <h3>NETFLIX ORIGINALS</h3>
-        <div class="slider scroll">
-          <a href="show.html#selected" class="slider__item">
-            <img src="./assets/content/strangersthings.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Strangers Thins</h4>
-                <div class="info text-shadow">
-                  <div class="green">90% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>2 Seasons</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/bundersnatch.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Black Mirror: Bundersnatch</h4>
-                <div class="info text-shadow">
-                  <div class="green">95% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/houseofcards.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">House of Cards</h4>
-                <div class="info text-shadow">
-                  <div class="green">79% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>5 Seasons</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/la tierra errante.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">The Wandering Earth</h4>
-                <div class="info text-shadow">
-                  <div class="green">90% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>Movie</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/lacasadepapel.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">La Casa de Papel</h4>
-                <div class="info text-shadow">
-                  <div class="green">94% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>2 Seasons</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/narcos.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Narcos</h4>
-                <div class="info text-shadow">
-                  <div class="green">91% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>2 Seasons</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/orange.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Orange is the New Black</h4>
-                <div class="info text-shadow">
-                  <div class="green">88% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>3 Seasons</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/sabrina.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Chilling Adventures of Sabrina</h4>
-                <div class="info text-shadow">
-                  <div class="green">94% Match</div>
-                  <div class="tag">TV-14</div>
-                  <div>2 Seasons</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/daredevil.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Daredevil</h4>
-                <div class="info text-shadow">
-                  <div class="green">92% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>4 Seasons</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-          <a href="#" class="slider__item">
-            <img src="./assets/content/alteredcarbon.webp" alt="image" />
-            <div class="slider__box">
-              <div class="slider__content">
-                <span class="slider__play"><i class="fas fa-play"></i></span>
-                <h4 class="text-shadow">Altered Carbon</h4>
-                <div class="info text-shadow">
-                  <div class="green">89% Match</div>
-                  <div class="tag">TV-17</div>
-                  <div>1 Season</div>
-                </div>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-            <div class="slider__actions">
-              <span>
-                <i class="far fa-thumbs-up"></i>
-              </span>
-              <span>
-                <i class="far fa-thumbs-down"></i>
-              </span>
-              <span>
-                <i class="fas fa-plus"></i>
-              </span>
-            </div>
-            <div class="slider__footer">
-              <svg id="chevron-down" viewBox="0 0 60 19" width="100%" height="100%">
-                <path fill="currentColor"
-                  d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873">
-                </path>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer__icons">
-        <ul class="footer__social">
-          <i class="fab fa-facebook-square social__icons fa-2x"></i>
-          <i class="fab fa-instagram social__icons fa-2x"></i>
-          <i class="fab fa-twitter social__icons fa-2x"></i>
-          <i class="fab fa-youtube social__icons fa-2x"></i>
-        </ul>
-      </div>
-      <div class="footer_menu ">
-        <ul class="footer__options">
-          <li class="footer__link">
-            <a class="footer__article" href="#">Audio y Subtitulos</a>
+  <body>
+    <nav>
+      <div class="left-menu">
+        <a href="/">
+          <img class="logo-nav" src="assets/fakeflix.png" alt="fakefelix" />
+        </a>
+        <ul>
+          <li>
+            <a href="#">Home</a>
           </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Prensa</a>
+          <li>
+            <a href="#">Series</a>
           </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Privacidad</a>
+          <li>
+            <a href="#">Movies</a>
           </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Contáctanos</a>
+          <li>
+            <a href="#">Recently Added</a>
           </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Audio descriptivo</a>
-          </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Relaciones con inversionistas</a>
-          </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Avisos legales</a>
-          </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Centro de ayuda</a>
-          </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Empleo</a>
-          </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Preferencias de cookies</a>
-          </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Tarjetas de regalo</a>
-          </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Términos de uso</a>
-          </li>
-          <li class="footer__link">
-            <a class="footer__article" href="#">Información corporativa</a>
+          <li>
+            <a href="#">My list</a>
           </li>
         </ul>
       </div>
-      <div class="footer__code">
-        <button class="footer__button">Codigo de servicio</button>
+      <div class="right-menu">
+        <div class="search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Title, people and genres" />
+        </div>
+        <div><i class="fas fa-bell"></i></div>
+        <div class="menu-profile">
+          <img src="/assets/profile.png" alt="image" />
+          <i class="fas fa-caret-down"></i>
+        </div>
       </div>
-      <div class="footer__bottom">
-        <p class="footer__benchmark"><i class="far fa-copyright"></i> 2019-2020 Fakeflix Perú, Corp. </p>
+    </nav>
+    <div class="layout">
+      <div class="hero">
+        <div
+          class="hero__content"
+          style="background-image: url('/assets/topimg.jpg')"
+        >
+          <div class="hero__detail">
+            <div class="logo">
+              <img src="/assets/movietitle.webp" alt="" />
+            </div>
+            <div class="hero__detail-text">
+              Watch season 1 now
+            </div>
+            <div class="hero__buttons">
+              <a href="#"><i class="fas fa-play"></i> Play</a>
+              <a href="#"><i class="fas fa-plus"></i> My list</a>
+            </div>
+            <div class="hero__detail-text">
+              For fans who likes things
+            </div>
+          </div>
+          <div class="hero__fade-bottom"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__item" id="selected">
+          <h3>Popular on Netflix</h3>
+          <div class="slider scroll">
+            <a href="show.html#selected" class="slider__item active">
+              <img src="./assets/sliders/slider-1.jpg" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">El conjuro</h4>
+                  <div class="info text-shadow">
+                    <div class="green">98% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>9 Seasons</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/psyco.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">American Psycho</h4>
+                  <div class="info text-shadow">
+                    <div class="green">80% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/strangersthings.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Strangers Things</h4>
+                  <div class="info text-shadow">
+                    <div class="green">90% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>2 Seasons</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/soyleyenda.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">I am Legend</h4>
+                  <div class="info text-shadow">
+                    <div class="green">87% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/americanganster.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">American Gangster</h4>
+                  <div class="info text-shadow">
+                    <div class="green">92% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/schindlerlist.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Schindler's List</h4>
+                  <div class="info text-shadow">
+                    <div class="green">77% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/theprofessional.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">The Professional</h4>
+                  <div class="info text-shadow">
+                    <div class="green">95% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/therevenant.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">The Revenant</h4>
+                  <div class="info text-shadow">
+                    <div class="green">86% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/volveralfuturo.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Back to the Future</h4>
+                  <div class="info text-shadow">
+                    <div class="green">91% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/gloriusbastards.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Inglorious Bastards</h4>
+                  <div class="info text-shadow">
+                    <div class="green">89% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview__gradient"></div>
+          <h2 class="preview__title white relative">El conjuro</h2>
+          <div class="preview__info relative">
+            <div class="starts">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="preview_year gray">2015</div>
+            <div class="preview_category gray">TV-MA</div>
+            <div class="preview_season gray">1 Season</div>
+          </div>
+          <p class="preview__description gray relative">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            doloremque.
+          </p>
+          <div class="description relative">
+            <p>
+              <label>Starring:</label>
+              <a href="#">David Conde</a>
+              <a href="#">Deborath Space</a>
+              <a href="#">Vincent Donovan</a>
+            </p>
+            <p>
+              <label>Genres:</label>
+              <a href="#">Tv Shows</a>
+              <a href="#">Horror Book</a>
+              <a href="#">Horror</a>
+            </p>
+            <p>
+              <label>This show is:</label>
+              <a href="#">Scary</a>
+              <a href="#">Dark</a>
+              <a href="#">Gore</a>
+            </p>
+          </div>
+          <div class="curious relative">
+            <i class="fas fa-user-circle gray"></i>
+            <div class="gray">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="option margin relative">
+            <i class="far fa-check-circle white"></i>
+            <div class="white">MY LIST</div>
+          </div>
+          <div class="preview__tabs relative">
+            <a href="#">Overview</a>
+            <a href="#">Episodes</a>
+            <a href="#">More like this</a>
+            <a href="#">Details</a>
+          </div>
+        </div>
+        <div class="content__item">
+          <h3>Trending Now</h3>
+          <div class="slider scroll">
+            <a href="show.html#selected" class="slider__item">
+              <img src="./assets/content/antman.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Ant-Man</h4>
+                  <div class="info text-shadow">
+                    <div class="green">95% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/guardiansofgalaxy.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Guardians of the Galaxy</h4>
+                  <div class="info text-shadow">
+                    <div class="green">96% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/ironman3panel.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Ironman 3</h4>
+                  <div class="info text-shadow">
+                    <div class="green">92% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/captainamerica.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">
+                    Captain America: El Primer Vengador
+                  </h4>
+                  <div class="info text-shadow">
+                    <div class="green">90% Match</div>
+                    <div class="tag">TV-16</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/thor.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Thor</h4>
+                  <div class="info text-shadow">
+                    <div class="green">89% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/superman.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Superman</h4>
+                  <div class="info text-shadow">
+                    <div class="green">87% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/starwarsep7.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Episode VII</h4>
+                  <div class="info text-shadow">
+                    <div class="green">93% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/onepunchman.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">One Punch Man</h4>
+                  <div class="info text-shadow">
+                    <div class="green">92% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>1 Season</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/deathnote.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Death Note</h4>
+                  <div class="info text-shadow">
+                    <div class="green">89% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>1 Season</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/thordarkworld.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Thor: The Dark World</h4>
+                  <div class="info text-shadow">
+                    <div class="green">92% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="content__item">
+          <h3>NETFLIX ORIGINALS</h3>
+          <div class="slider scroll">
+            <a href="show.html#selected" class="slider__item">
+              <img src="./assets/content/strangersthings.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Strangers Thins</h4>
+                  <div class="info text-shadow">
+                    <div class="green">90% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>2 Seasons</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/bundersnatch.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Black Mirror: Bundersnatch</h4>
+                  <div class="info text-shadow">
+                    <div class="green">95% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/houseofcards.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">House of Cards</h4>
+                  <div class="info text-shadow">
+                    <div class="green">79% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>5 Seasons</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/la tierra errante.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">The Wandering Earth</h4>
+                  <div class="info text-shadow">
+                    <div class="green">90% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>Movie</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/lacasadepapel.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">La Casa de Papel</h4>
+                  <div class="info text-shadow">
+                    <div class="green">94% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>2 Seasons</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/narcos.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Narcos</h4>
+                  <div class="info text-shadow">
+                    <div class="green">91% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>2 Seasons</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/orange.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Orange is the New Black</h4>
+                  <div class="info text-shadow">
+                    <div class="green">88% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>3 Seasons</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/sabrina.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Chilling Adventures of Sabrina</h4>
+                  <div class="info text-shadow">
+                    <div class="green">94% Match</div>
+                    <div class="tag">TV-14</div>
+                    <div>2 Seasons</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/daredevil.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Daredevil</h4>
+                  <div class="info text-shadow">
+                    <div class="green">92% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>4 Seasons</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="slider__item">
+              <img src="./assets/content/alteredcarbon.webp" alt="image" />
+              <div class="slider__box">
+                <div class="slider__content">
+                  <span class="slider__play"><i class="fas fa-play"></i></span>
+                  <h4 class="text-shadow">Altered Carbon</h4>
+                  <div class="info text-shadow">
+                    <div class="green">89% Match</div>
+                    <div class="tag">TV-17</div>
+                    <div>1 Season</div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__actions">
+                <span>
+                  <i class="far fa-thumbs-up"></i>
+                </span>
+                <span>
+                  <i class="far fa-thumbs-down"></i>
+                </span>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="slider__footer">
+                <svg
+                  id="chevron-down"
+                  viewBox="0 0 60 19"
+                  width="100%"
+                  height="100%"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M59.5615866,2.44258873 L31.1899791,17.6617954 C30.7515658,17.9123173 30.2505219,18.1002088 30.0626305,18.1002088 C29.874739,18.1002088 29.6242171,18.0375783 29.5615866,18.0375783 C29.4363257,17.9749478 28.9979123,17.7244259 28.559499,17.5365344 L0.501043841,2.44258873 C0.187891441,2.31732777 0,1.94154489 0,1.62839248 C0,1.50313152 0.0626304802,1.37787056 0.12526096,1.18997912 L0.501043841,0.501043841 C0.688935282,0.187891441 1.00208768,0 1.31524008,0 C1.50313152,0 1.62839248,0 1.75365344,0.12526096 L29.1858038,14.8434238 C29.3736952,14.9686848 29.6868476,15.0313152 30,15.0313152 C30.3131524,15.0313152 30.6263048,14.9686848 30.8141962,14.8434238 L58.2463466,0.12526096 C58.6847599,-0.12526096 59.2484342,0 59.4989562,0.501043841 L59.874739,1.18997912 C60.125261,1.62839248 60,2.19206681 59.5615866,2.44258873"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__icons">
+          <ul class="footer__social">
+            <a href="#">
+              <i class="fab fa-facebook-square social__icons fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram social__icons fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter social__icons fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube social__icons fa-2x"></i>
+            </a>
+          </ul>
+        </div>
+        <div class="footer_menu ">
+          <ul class="footer__options">
+            <li class="footer__link">
+              <a class="footer__article" href="#">Audio y Subtitulos</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Prensa</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Privacidad</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Contáctanos</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Audio descriptivo</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#"
+                >Relaciones con inversionistas</a
+              >
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Avisos legales</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Centro de ayuda</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Empleo</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Preferencias de cookies</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Tarjetas de regalo</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Términos de uso</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__article" href="#">Información corporativa</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__code">
+          <button class="footer__button">Codigo de servicio</button>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__benchmark">
+            <i class="far fa-copyright"></i> 2019-2020 Fakeflix Perú, Corp.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

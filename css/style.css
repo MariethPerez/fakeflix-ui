@@ -134,6 +134,7 @@ nav ul {
   padding-left: 20px;
   font-size: 14px;
 }
+
 nav ul li {
   padding-right: 20px;
 }
@@ -277,6 +278,7 @@ nav ul li:hover a {
 
 .content {
   padding-left: 4%;
+  padding-bottom: 2em;
 }
 
 .hero__buttons a:hover {
@@ -469,6 +471,7 @@ nav ul li:hover a {
   margin: 0 auto;
   font-family: sans-serif;
   font-size: 13px;
+  padding: 0 4%;
 }
 
 .footer__social {
@@ -476,6 +479,11 @@ nav ul li:hover a {
   display: flex;
   justify-content: space-between;
   padding-left: 0;
+}
+
+.footer__social a {
+  display: block;
+  margin-right: 15px;
 }
 
 .social__icons {
@@ -502,9 +510,9 @@ nav ul li:hover a {
 }
 
 .footer-menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer__link {
@@ -520,10 +528,12 @@ nav ul li:hover a {
 
 .footer__link a {
   color: #999;
+  transition: border 0.3s;
+  border-bottom: 1px solid transparent;
 }
 
 .footer__link a:hover {
-  border-bottom: 1px solid #999;
+  border-color: #999;
 }
 
 .footer__button {
@@ -811,6 +821,15 @@ nav ul li:hover a {
   .preview__tabs a {
     padding: 10px 15px;
   }
+
+  .footer__options > li {
+    flex-basis: 33.3%;
+  }
+
+  .footer__social {
+    width: 100%;
+    justify-content: initial;
+  }
 }
 
 @media (max-width: 768px) {
@@ -861,6 +880,10 @@ nav ul li:hover a {
     align-items: center;
     text-align: center;
     padding: 2px 5px;
+  }
+
+  .footer__options > li {
+    flex-basis: 50%;
   }
 }
 
