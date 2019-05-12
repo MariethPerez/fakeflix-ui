@@ -87,6 +87,7 @@ html {
   overflow: scroll;
   height: 345px;
   align-items: center;
+  padding: 0 0 0 15px;
 }
 
 .card {
@@ -126,6 +127,7 @@ html {
 
 .card:hover {
   transform: scale(1.5);
+  margin-right: 24px;
 }
 
 .card:hover .card__content {
@@ -252,4 +254,28 @@ html {
 
 .card:hover img {
   filter: blur(0.7px);
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    align-items: flex-start;
+  }
+  .category {
+    align-items: flex-start;
+    margin-left: 0;
+  }
+  .category p {
+    display: none;
+  }
+  .popular-on-netflix p {
+    margin-bottom: 0;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .row {
+    margin-left: 0;
+  }
+  .option-view {
+    margin-right: 0;
+  }
 }
