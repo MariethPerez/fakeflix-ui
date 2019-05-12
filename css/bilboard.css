@@ -19,3 +19,53 @@
   right: 0;
   height: 40%;
 }
+
+.info-layer {
+  position: relative;
+  height: 400px;
+}
+
+.billboard {
+  position: absolute;
+  width: 40%;
+  padding-left: 4%;
+  left: 0;
+  top: 0;
+}
+
+.billboard-title {
+  padding-top: 10vw;
+  min-height: 13.2vw;
+  position: relative;
+}
+
+.billboard-title .title {
+  width: 81%;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5vw;
+}
+
+@media screen and (max-width: 768px){
+  .play {
+    justify-content: center;
+  }
+  .billboard-title .title {
+    max-width: 170px;
+  }
+  .billboard{
+    width: 100%;
+    top: auto;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: auto;
+  }
+  .billboard-title {
+    text-align: center;
+  }
+}

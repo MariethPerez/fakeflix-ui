@@ -18,45 +18,6 @@ ul{
   list-style-type: none;
 }
 
-
-/* Buttons */
-.button {
-  height: 35px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1.5em;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 0.05em;
-  transition: all 0.25s;
-}
-.button .icon {
-  width: 14px;
-  height: 14px;
-  margin-right: 8px;
-  fill: white;
-}
-.button:hover {
-  transform: scale(1.05);
-}
-
-.-primary {
-  background-color: var(--c-primary);
-}
-.-secondary {
-  background-color: transparent;
-  border: 1px solid var(--c-gray);
-}
-
-.-secondary:hover {
-  background-color: rgb(56, 56, 56);
-}
-
-
 /* Helpers */
 .none{
   display: none;

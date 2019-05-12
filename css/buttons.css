@@ -1,0 +1,65 @@
+/* Buttons */
+.button {
+  height: 35px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  transition: all 0.25s;
+}
+.button .icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  fill: white;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+
+.-primary {
+  background-color: var(--c-primary);
+}
+.-secondary {
+  background-color: transparent;
+  border: 1px solid var(--c-gray);
+}
+
+.-secondary:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+.-billboard {
+  border-radius: 3px;
+  background-color: rgba(51, 51, 51, 0.4);
+  border-width: 0;
+  padding: 1.5em 2.3em;
+  font-weight: 700;
+  margin-right: 0.75em;
+  white-space: nowrap;
+  font-size: 1em;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.-billboard:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+.-billboard:hover .icon {
+  background-color: #e6e6e6;
+  fill: #000;
+}
+
+@media screen and (max-width: 768px){
+  .-billboard{
+    font-size: 0.7em;
+  }
+}
