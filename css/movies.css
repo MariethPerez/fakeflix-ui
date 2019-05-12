@@ -1,4 +1,8 @@
 /* Catgeory */
+.category{
+  position: relative;
+}
+
 .category.-first{
   margin-top: -190px;
 }
@@ -24,10 +28,11 @@
   overflow-y: hidden;
   position: relative;
   z-index: 5;
+  box-sizing: border-box;
 }
 
 .category-preview-item{
-  margin: 0 2px;
+  margin-right: 2px;
   height: 120px;
   flex-basis: 213px;
   flex-shrink: 0;
@@ -88,9 +93,54 @@
   overflow: hidden;
   margin-top: 0px;
   transition: all 0.5s ease;
+  margin-bottom: 0;
 }
 
 .category-info-radio:checked ~ .category-info-item{
   margin-top: -87px;
   height: 500px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .movie-detail .information,
+  .category-title,
+  .category-preview{
+    padding-left: 16px;
+  }
+
+  .movie-detail .description{
+    display: none;
+  }
+  .movie-detail {
+    grid-template-columns: 60% 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category-info{
+    display: none;
+  }
+
+  .category-preview-item:hover .media-item:after{
+    opacity: 0;
+  }
+  .category-preview-item:hover{
+    flex-basis: 213px;
+  }
+  .category-preview-item:hover .media-item{
+    transform: scale(0.5)
+  }
+  .category-preview-item .info{
+    opacity: 0;
+    display: none;
+  }
+  .category-title{
+    margin-bottom: 8px;
+  }
+  .category-preview{
+    height: auto;
+  }
+
+
 }
