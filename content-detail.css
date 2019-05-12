@@ -16,6 +16,7 @@ body {
 .content-image {
   width: 60%;
 }
+
 .title {
   color: white;
   font-size: 50px;
@@ -32,6 +33,7 @@ body {
   color: rgb(194, 188, 188);
   font-size: 18px;
 }
+
 .tv {
   border: 1px solid rgb(194, 188, 188);
 }
@@ -53,6 +55,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .fa-play-circle {
   font-size: 100px;
   color: rgb(194, 188, 188);
@@ -66,6 +69,7 @@ body {
   font-size: 20px;
   color: rgb(194, 188, 188);
 }
+
 .content {
   color: white;
 }
@@ -133,8 +137,8 @@ body {
     margin-left: 10px;
     font-family: "Lato", sans-serif;
     background-color: black;
-    margin-left: 10px;
   }
+
   .content-image {
     height: 35%;
     width: 100%;
