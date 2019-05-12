@@ -3,12 +3,20 @@
   margin-top: -190px;
 }
 
+.category-title{
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: -60px;
+  padding-left: 56px;
+}
+
 .category-preview::-webkit-scrollbar {
   width: 0 !important
 }
 
 .category-preview{
   display: flex;
+  padding-left: 56px;
   width: 100vw;
   align-items: center;
   overflow-x: auto;
@@ -20,7 +28,7 @@
 
 .category-preview-item{
   margin: 0 2px;
-  height: 280px;
+  height: 120px;
   flex-basis: 213px;
   flex-shrink: 0;
   position: relative;

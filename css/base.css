@@ -58,6 +58,9 @@ ul{
 
 
 /* Helpers */
+.none{
+  display: none;
+}
 
 .transition {
   transition-property: all;
