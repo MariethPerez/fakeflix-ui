@@ -36,9 +36,9 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
-.title p{
-  text-align: center
-}
+  .title p {
+    text-align: center;
+  }
 }
 
 .profiles {
@@ -100,9 +100,9 @@ html {
   margin-top: 60px;
 }
 
-@media only screen and (max-width:600px) {
- .manage {
-    margin-top:15px;
+@media only screen and (max-width: 600px) {
+  .manage {
+    margin-top: 15px;
   }
 }
 
@@ -116,3 +116,4 @@ html {
   color: white;
   cursor: pointer;
 }
+/* comentario */
