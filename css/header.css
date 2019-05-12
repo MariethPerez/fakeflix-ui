@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: #e5e5e5;
+  font-family: sans-serif;
+}
+
+.header-main {
+  height: 68px;
+  display: flex;
+  margin: 0px 4%;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-options {
+  list-style: none;
+  display: flex;
+  width: 448px;
+  justify-content: space-around;
+  padding-left: 32px;
+  margin-right: auto;
+}
+
+.header-option-menu {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.menu::after {
+  content: "";
+  border-style: solid;
+  border-width: 5px 5px 0px 5px;
+  border-color: #fff transparent transparent transparent;
+  margin-left: 5px;
+}
+
+.header-option {
+  cursor: pointer;
+}
+
+.header-option a:hover {
+  color: #b3b3b3;
+}
+.header-option a.active:hover {
+  color: #fff;
+}
+
+.active {
+  color: #fff;
+  font-weight: 700;
+  cursor: default;
+}
+
+.header-options-secondary {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-option {
+  margin-right: 15px;
+}
+
+.search-tab,
+.notifications {
+  cursor: pointer;
+  border: none;
+  background: 0 0;
+}
+
+.notifications {
+  position: relative;
+  font-size: 21px;
+  padding: 1px 0px;
+}
+
+.search-tab:focus {
+  outline: 0;
+  transform: scale(1.2);
+}
+
+.notifications:focus {
+  outline: 0;
+  transform: scale(1.2);
+}
+
+.icon-search {
+  font-size: 1.3em;
+}
+
+/* .icon-notification {
+  font-size: 1.5em;
+} */
+
+.icon-search,
+.icon-notification {
+  color: white;
+}
+
+.icon-search::before {
+  content: "\1F50D";
+}
+
+.icon-notification::before {
+  content: "\1F514";
+}
+
+.notification-queue {
+  position: absolute;
+  font-weight: 700;
+  min-width: 1.25em;
+  padding: 0.25em;
+  background-color: #b9090b;
+  color: #fff;
+  font-size: 0.5em;
+  border-radius: 1000px;
+  top: -0.25em;
+  right: -0.1em;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.caret {
+  border-style: solid;
+  border-width: 5px 5px 0px 5px;
+  border-color: #fff transparent transparent transparent;
+  margin-left: 10px;
+}
+
+@media (min-width: 1330px) {
+  .nav-option {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .header-main {
+    height: 41px;
+  }
+
+  .header-option {
+    display: none;
+  }
+
+  .header-option-menu {
+    display: inline;
+  }
+}
+
+@media (max-width: 400px) {
+  .icon-search::before {
+    content: "";
+  }
+}
